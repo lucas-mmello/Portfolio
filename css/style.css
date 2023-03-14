@@ -198,6 +198,8 @@ span {
   margin-bottom: 5rem;
 }
 
+/* CSS existente */
+
 .services-container {
   display: flex;
   justify-content: center;
@@ -214,6 +216,8 @@ span {
   text-align: center;
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
+  position: relative; /* Adicionado */
+  overflow: hidden;
 }
 
 .services-container .services-box:hover {
@@ -235,8 +239,8 @@ span {
   margin: 1rem 0 3rem;
 }
 
-.services-box .dialog {
-  position: absolute;
+.services-box dialog {
+  /* position: absolute; Removido */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -249,10 +253,35 @@ span {
   padding: 0 4rem;
   transform: translateY(100%);
   transition: 0.5s ease;
+  position: absolute; /* Adicionado */
+  top: 0; /* Adicionado */
+  left: 0; /* Adicionado */
+  overflow: hidden;
 }
 
-.services-box .dialog.ativa {
+.services-box dialog.ativa {
   transform: translateY(0);
+}
+
+/* Novo código adicionado */
+.services-box dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.services-box dialog button {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.services-box dialog button:hover {
+  transform: scale(1.1);
 }
 
 .portfolio {

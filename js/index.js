@@ -31,7 +31,7 @@ window.onscroll = () => {
   menuIcon.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
-ScrollReveal({  distance: "80px", duration: 2000, delay: 200 });
+ScrollReveal({ distance: "80px", duration: 2000, delay: 200 });
 
 ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
 ScrollReveal().reveal(
@@ -55,10 +55,19 @@ botoes.forEach((botao) => {
 
     // Seleciona o elemento filho com o id "dialog"
     const dialogFilho = divPai.querySelector("dialog");
-    dialogFilho.classList.add("ativa");
 
     // Abre a caixa de diálogo
     dialogFilho.showModal();
+
+    // Define a posição da caixa de diálogo após ela ser exibida
+    dialogFilho.addEventListener("open", () => {
+      const servicosSection = document.querySelector("#servicos");
+      const servicosOffsetTop = servicosSection.offsetTop;
+      const servicosOffsetLeft = servicosSection.offsetLeft;
+
+      dialogFilho.style.top = servicosOffsetTop + "px";
+      dialogFilho.style.left = servicosOffsetLeft + "px";
+    });
   });
 });
 
