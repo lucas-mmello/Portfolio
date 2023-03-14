@@ -16,9 +16,9 @@
       <a href="#" class="logo">Portfolio</a>
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
-        <a href="#inicio">Inicio</a>
+        <a href="#inicio" class="active">Inicio</a>
         <a href="#sobre">Sobre</a>
-        <a href="#serviços">Serviços</a>
+        <a href="#servicos">Serviços</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
       </nav>
@@ -27,10 +27,13 @@
       <div class="home-content">
         <h3>Olá, eu sou o</h3>
         <h1>Lucas Mello</h1>
-        <h3>e sou um <span>Desenvolvedor Javascript Full Stack</span></h3>
+        <h3>
+          e sou um
+          <span class="multiple-text"></span>
+        </h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-          temporibus ad accusamus facere tenetur tempore vitae repellat!
+          Seja Bem Vindo ao meu Portfólio online! Aqui, será possível encontrar
+          alguns dos meu projetos e informações sobre mim.
         </p>
         <div class="social-media">
           <a
@@ -62,42 +65,58 @@
       </div>
       <div class="about-content">
         <h2 class="heading">Sobre <span>Mim</span></h2>
-        <h3>Desenvolvedor Full Stack</h3>
+        <h3>Desenvolvedor Full Stack!</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
-          numquam nobis commodi itaque dolores modi minus error ratione
-          distinctio amet reprehenderit maxime voluptatibus nesciunt odio, vero
-          aperiam. Esse, eum rerum at repellendus optio delectus voluptatem non
-          ipsam dolorem molestias magnam expedita cum ab eos quo doloribus?
+          Olá, eu sou um desenvolvedor que busca aprender mais sobre
+          programação. Tenho 20 anos e em meu tempo livre toco piano e teclado.
+          Faço faculdade de Sistemas de Informação, estou no 5 período e busco
+          um estágio para adiquirir experiência.
         </p>
         <a href="#" class="btn">Ler Mais</a>
       </div>
     </section>
 
-    <section class="services" id="serviços">
+    <section class="services" id="servicos">
       <h2 class="heading">Meus <span>Serviços</span></h2>
 
       <div class="services-container">
-        <div class="services-box">
+        <div class="services-box" id="web">
           <i class="bx bx-code-alt"></i>
           <h3>Desenvolvimento Web</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-            sit nulla quasi porro nesciunt blanditiis facere, doloremque
-            similique voluptatem eos.
+            Faço o desenvolvimento web utilizando o javascript no front e no
+            back end do site
           </p>
-          <a href="#" class="btn">Ler Mais</a>
+          <dialog>
+            <h3>Desenvolvimento Web</h3>
+            <p>
+              Sei desenvolver sites utilizando minhas habilidade de html, css e
+              javascript. Além disso, sei ferramentas que me auxiliam a
+              codificar de maneira mais veloz, como o SASS, Bootstrap, e
+              futuramente React. No back end, utilizo no node e o express. Além
+              disso, sei utilizar o mongodb com o mongoose no node e
+              futuramente, irei estudar o PostgreeSql com o node. Também planejo
+              aprender outros frameworks css e a linguagem typescript, que
+              derivou do javascript.
+            </p>
+            <a href="" class="btn" id="fechar">Fechar</a>
+          </dialog>
+          <button class="btn" id="ler">Ler Mais</button>
         </div>
 
-        <div class="services-box">
+        <div class="services-box" id="mobile">
           <i class="bx bx-devices"></i>
           <h3>Desenvolvimento Mobile</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-            sit nulla quasi porro nesciunt blanditiis facere, doloremque
-            similique voluptatem eos.
-          </p>
-          <a href="#" class="btn">Ler Mais</a>
+          <p>Em breve!</p>
+          <dialog>
+            <h3>Desenvolvimento Mobile</h3>
+            <p>
+              Em breve... Quando terminar meu curso de desenvolvimento web, irei
+              começar o curso de React Native.
+            </p>
+            <a href="" class="btn" id="fechar">Fechar</a>
+          </dialog>
+          <button class="btn" id="ler">Ler Mais</button>
         </div>
       </div>
     </section>
@@ -109,11 +128,8 @@
         <div class="portfolio-box">
           <img src="./images/portfolio8.jpg" alt="Imagem Portfolio" />
           <div class="portfolio-layer">
-            <h4>A preencher</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
-              saepe.
-            </p>
+            <h4>Em breve</h4>
+            <p>Projeto que futuramente será desenvolvido</p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
@@ -121,10 +137,10 @@
         <div class="portfolio-box">
           <img src="./images/portfolio2.jpg" alt="Imagem Portfolio" />
           <div class="portfolio-layer">
-            <h4>A preencher</h4>
+            <h4>Calculadora</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
-              saepe.
+              Projeto de calculadora, escrito em javascript quando estava
+              estudando um módulo de um curso.
             </p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
@@ -133,16 +149,73 @@
         <div class="portfolio-box">
           <img src="./images/portfolio4.jpg" alt="Imagem Portfolio" />
           <div class="portfolio-layer">
-            <h4>A preencher</h4>
+            <h4>Jogo da Velha</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
-              saepe.
+              Projeto de um jogo da velha, escrito em javascript quando estava
+              estudando um módulo de um curso.
             </p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="contact" id="contato">
+      <h2 class="heading">Contactar <span>Me!</span></h2>
+
+      <form
+        action="https://formsubmit.co/lucasmello03@hotmail.com"
+        method="post"
+      >
+        <div class="input-box">
+          <input type="text" name="" id="" placeholder="Nome Completo" />
+          <input type="email" name="" id="" placeholder="Endereço de Email" />
+        </div>
+
+        <div class="input-box">
+          <input type="number" name="" id="" placeholder="Número do Celular" />
+          <input type="text" name="" id="" placeholder="Assunto do Email" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Sua Mensagem"
+        ></textarea>
+        <input type="submit" value="Enviar Mensagem" class="btn" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          Copyright &copy; 2023 por Lucas Mello | Todos os Direitos Reservados.
+        </p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#inicio"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="./js/typed.js"></script>
+
+    <script>
+      const typed = new Typed(".multiple-text", {
+        strings: [
+          "Desenvolvedor Javascript Full Stack",
+          "Desenvolvedor Javascript Mobile",
+          "Estudante de SI",
+        ],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true,
+      });
+    </script>
 
     <script src="./js/index.js"></script>
   </body>
