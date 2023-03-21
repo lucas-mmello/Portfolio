@@ -65,11 +65,12 @@ btnLerMais.forEach((btn) => {
 const btnFechar = document.querySelectorAll(".fechar");
 
 btnFechar.forEach((btn) => {
-  btn.addEventListener("click", function () {
+  btn.addEventListener("click", function (ev) {
+    ev.preventDefault();
     const boxes = document.querySelectorAll(".services-box");
 
     boxes.forEach((box) => {
-      box.style.display = "flex";
+      box.style.display = "unset";
     });
 
     const divMais = this.closest(".services-box-mais");
