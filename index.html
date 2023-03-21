@@ -4,266 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Meu Portfólio</title>
+    <meta http-equiv="refresh" content="7;url=./portfolio.html" />
+    <title>Carregando</title>
+    <link rel="stylesheet" href="./css/loading.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#inicio" class="active">Inicio</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-        <a href="#" id="theme-toggle" class="dark">Alternar tema</a>
-      </nav>
-    </header>
-    <section class="home" id="inicio">
-      <div class="home-content">
-        <h3>Olá, eu sou o</h3>
-        <h1>Lucas Mello</h1>
-        <h3>
-          e sou um
-          <span class="multiple-text"></span>
-        </h3>
-        <p>
-          Seja Bem Vindo ao meu Portfólio online! Aqui, será possível encontrar
-          alguns dos meu projetos e informações sobre mim.
-        </p>
-        <div class="social-media">
-          <a
-            href="https://www.linkedin.com/in/lucas-matos-de-mello-474a29196/"
-            target="_blank"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/lucas-mmello?tab=overview&from=2023-03-01&to=2023-03-13"
-            target="_blank"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </div>
-        <a
-          href="https://drive.google.com/file/d/1Vw6XbJQUgSxdCJAnpNchVLz4qmGkf4Nn/view?usp=share_link"
-          class="btn"
-          target="_blank"
-          >Baixar CV</a
-        >
-      </div>
-      <div class="home-img">
-        <img
-          src="./images/My project-1.png"
-          alt="Imagem Minha"
-          id="theme-image"
-        />
-      </div>
-    </section>
+    <h1>Aguarde, estamos carregando a página...</h1>
 
-    <section class="about" id="sobre">
-      <div class="about-img">
-        <img
-          src="./images/My_project-2.png"
-          alt="Imagem Minha 2"
-          id="sobre-image"
-        />
-      </div>
-      <div class="about-content">
-        <h2 class="heading">Sobre <span>Mim</span></h2>
-        <h3>Desenvolvedor Full Stack!</h3>
-        <p>
-          Olá, eu sou um desenvolvedor que busca aprender mais sobre
-          programação. Tenho 20 anos e em meu tempo livre toco piano e teclado.
-          Faço faculdade de Sistemas de Informação, estou no 5 período e busco
-          um estágio para adiquirir experiência.
-        </p>
-        <a
-          href="https://docs.google.com/document/d/1RMX1tC0-TV3ihZGERv4UKA1fPH21aGiim_4lXao2Zsw/edit?usp=share_link"
-          class="btn"
-          target="_blank"
-          >Saiba Mais</a
-        >
-      </div>
-    </section>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <br /><br />
 
-    <section class="services" id="servicos">
-      <h2 class="heading">Meus <span>Serviços</span></h2>
-
-      <div class="services-container">
-        <div class="services-box" id="web">
-          <i class="bx bx-code-alt"></i>
-          <h3>Desenvolvimento Web</h3>
-          <p>
-            Faço o desenvolvimento web utilizando o javascript no front e no
-            back end do site
-          </p>
-
-          <button class="btn ler">Ler Mais</button>
-        </div>
-        <div class="services-box-mais">
-          <h3>Desenvolvimento Web</h3>
-          <p>
-            Sei desenvolver sites utilizando minhas habilidade de html, css e
-            javascript. Além disso, sei ferramentas que me auxiliam a codificar
-            de maneira mais veloz, como o SASS, Bootstrap, e futuramente React.
-            No back end, utilizo no node e o express. Além disso, sei utilizar o
-            mongodb com o mongoose no node e futuramente, irei estudar o
-            PostgreeSql com o node. Também planejo aprender outros frameworks
-            css e a linguagem typescript, que derivou do javascript.
-          </p>
-          <a href="" class="btn fechar">Fechar</a>
-        </div>
-
-        <div class="services-box" id="mobile">
-          <i class="bx bx-devices"></i>
-          <h3>Desenvolvimento Mobile</h3>
-          <p>Em breve!</p>
-
-          <button class="btn ler">Ler Mais</button>
-        </div>
-        <div class="services-box-mais">
-          <h3>Desenvolvimento Mobile</h3>
-          <p>
-            Em breve... Quando terminar meu curso de desenvolvimento web, irei
-            começar o curso de React Native.
-          </p>
-          <a href="" class="btn fechar">Fechar</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="portfolio" id="projetos">
-      <h2 class="heading">Últimos <span>Projetos</span></h2>
-
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="./images/portfolio8.jpg" alt="Imagem Portfolio" />
-          <div class="portfolio-layer">
-            <h4>Em breve</h4>
-            <p>Projeto que futuramente será desenvolvido</p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="./images/portfolio2.jpg" alt="Imagem Portfolio" />
-          <div class="portfolio-layer">
-            <h4>Calculadora</h4>
-            <p>
-              Projeto de calculadora, escrito em javascript quando estava
-              estudando um módulo de um curso.
-            </p>
-            <a
-              href="https://lucas-mmello.github.io/Calculadora/"
-              target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="./images/portfolio4.jpg" alt="Imagem Portfolio" />
-          <div class="portfolio-layer">
-            <h4>Jogo da Velha</h4>
-            <p>
-              Projeto de um jogo da velha, escrito em javascript quando estava
-              estudando um módulo de um curso.
-            </p>
-            <a
-              href="https://lucas-mmello.github.io/Jogo-da-Velha/"
-              target="_blank"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contato">
-      <h2 class="heading">Contactar <span>Me!</span></h2>
-
-      <form
-        action="https://formsubmit.co/77404b3c24412195739d6c83129aee9c"
-        method="post"
-      >
-        <div class="input-box">
-          <input
-            type="text"
-            name="Nome"
-            id=""
-            placeholder="Nome Completo"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id=""
-            placeholder="Endereço de Email"
-            required
-          />
-        </div>
-
-        <div class="input-box">
-          <input
-            type="number"
-            name="numero"
-            id=""
-            placeholder="Número do Celular"
-          />
-          <input
-            type="text"
-            name="assunto"
-            id=""
-            placeholder="Assunto do Email"
-            required
-          />
-        </div>
-        <textarea
-          name="mensagem"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Sua Mensagem"
-          required
-        ></textarea>
-        <input type="submit" value="Enviar Mensagem" class="btn" />
-      </form>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-text">
-        <p>
-          Copyright &copy; 2023 por Lucas Mello | Todos os Direitos Reservados.
-        </p>
-      </div>
-
-      <div class="footer-iconTop">
-        <a href="#inicio"><i class="bx bx-up-arrow-alt"></i></a>
-      </div>
-    </footer>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script src="./js/typed.js"></script>
+    <p class="p">Bem-vindo ao meu site! Aguarde alguns instantes.</p>
 
     <script>
-      const typed = new Typed(".multiple-text", {
-        strings: [
-          "Desenvolvedor Javascript Full Stack",
-          "Desenvolvedor Javascript Mobile",
-          "Estudante de SI",
-        ],
-        typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 1000,
-        loop: true,
-      });
-    </script>
+      const progressBar = document.querySelector(".progress-bar");
+      const progress = document.querySelector(".progress");
+      const interval = 50;
+      let percent = 0;
+      const p = document.querySelector(".p");
 
-    <script src="./js/index.js"></script>
+      const timer = setInterval(() => {
+        percent += 1;
+        progress.style.width = percent + "%";
+        if (percent >= 110) {
+          p.innerHTML = "Redirecionando";
+          if (percent >= 120) {
+            clearInterval(timer);
+            window.location.href = "./portfolio.html";
+          }
+        }
+      }, interval);
+    </script>
   </body>
 </html>
