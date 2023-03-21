@@ -43,45 +43,38 @@ ScrollReveal().reveal(
 ScrollReveal().reveal(".home-content h1, .about img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
-// Seleciona todos os botões com o id "ler"
-const botoes = document.querySelectorAll("#ler");
+// botão ler mais
 
-// Percorre todos os botões
-botoes.forEach((botao) => {
-  // Adiciona um ouvinte de eventos de clique ao botão
-  botao.addEventListener("click", () => {
-    // Encontra a div pai do botão clicado
-    const divPai = botao.closest(".services-box");
+const btnLerMais = document.querySelectorAll(".ler");
 
-    // Seleciona o elemento filho com o id "dialog"
-    const dialogFilho = divPai.querySelector("dialog");
+btnLerMais.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const divMais = this.closest(".services-box").nextElementSibling;
+    const boxes = document.querySelectorAll(".services-box");
 
-    // Abre a caixa de diálogo
-    dialogFilho.showModal();
-
-    // Define a posição da caixa de diálogo após ela ser exibida
-    dialogFilho.addEventListener("open", () => {
-      const servicosSection = document.querySelector("#servicos");
-      const servicosOffsetTop = servicosSection.offsetTop;
-      const servicosOffsetLeft = servicosSection.offsetLeft;
-
-      dialogFilho.style.top = servicosOffsetTop + "px";
-      dialogFilho.style.left = servicosOffsetLeft + "px";
+    boxes.forEach((box) => {
+      box.style.display = "none";
     });
+
+    divMais.style.display = "block";
   });
 });
 
-// Seleciona o botão "Fechar"
-const botaoFechar = document.querySelector("#fechar");
+// botão fechar
 
-// Seleciona a caixa de diálogo correspondente
-const dialogo = document.querySelector("dialog");
+const btnFechar = document.querySelectorAll(".fechar");
 
-// Adiciona um ouvinte de eventos de clique ao botão "Fechar"
-botaoFechar.addEventListener("click", () => {
-  // Fecha a caixa de diálogo
-  dialogo.classList.remove("ativa");
-  dialogo.close();
+btnFechar.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const boxes = document.querySelectorAll(".services-box");
+
+    boxes.forEach((box) => {
+      box.style.display = "flex";
+    });
+
+    const divMais = this.closest(".services-box-mais");
+    divMais.style.display = "none";
+  });
 });
 
 // Altera os temas claro e escuro e as imagens
