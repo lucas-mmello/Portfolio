@@ -83,4 +83,23 @@ botaoFechar.addEventListener("click", () => {
   dialogo.classList.remove("ativa");
   dialogo.close();
 });
-// teste
+
+// Altera os temas claro e escuro e as imagens
+
+const themeToggle = document.getElementById("theme-toggle");
+const root = document.documentElement;
+const themeImage = document.getElementById("theme-image");
+const sobreImage = document.getElementById("sobre-image");
+
+themeToggle.addEventListener("click", (e) => {
+  e.preventDefault();
+  root.classList.toggle("light");
+  themeToggle.classList.toggle("light");
+  themeToggle.classList.toggle("dark");
+  themeImage.src = root.classList.contains("light")
+    ? "./images/My project-4.png"
+    : "./images/My project-1.png";
+  sobreImage.src = root.classList.contains("light")
+    ? "./images/My project-3.png"
+    : "./images/My_project-2.png";
+});

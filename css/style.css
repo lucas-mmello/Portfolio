@@ -16,6 +16,19 @@
   --second-bg-color: #323946;
   --text-color: #fff;
   --main-color: #0ef;
+  --anima-color: rgb(27, 225, 247);
+  --anima-shadow: 1.5mm;
+  --anima-shadow-w: 0.5mm;
+}
+
+:root.light {
+  --bg-color: #f5f5f5;
+  --second-bg-color: #e0e0e0;
+  --text-color: #333;
+  --main-color: #f90;
+  --anima-color: rgb(255, 163, 24);
+  --anima-shadow: 3mm;
+  --anima-shadow-w: 1mm;
 }
 
 html {
@@ -71,6 +84,11 @@ section {
   text-shadow: 0 0 1rem var(--main-color);
 }
 
+.navbar a.light {
+  color: var(--main-color);
+  text-shadow: 0 0 1rem var(--main-color);
+}
+
 #menu-icon {
   font-size: 3.6rem;
   color: var(--text-color);
@@ -91,15 +109,22 @@ section {
 @keyframes floatImage {
   0% {
     transform: translateY(0);
-    filter: drop-shadow(0 1mm 0.5mm rgb(27, 225, 247));
+    filter: drop-shadow(
+      0 var(--anima-shadow) var(--anima-shadow-w) var(--anima-color)
+    );
   }
   50% {
     transform: translateY(-2.4rem);
-    filter: drop-shadow(0 4mm 3mm rgb(27, 225, 247));
+    filter: drop-shadow(
+      0 calc(var(--anima-shadow) * 2) calc(var(--anima-shadow-w) * 3)
+        var(--anima-color)
+    );
   }
   100% {
     transform: translateY(0);
-    filter: drop-shadow(0 2mm 0.5mm rgb(27, 225, 247));
+    filter: drop-shadow(
+      0 var(--anima-shadow) var(--anima-shadow-w) var(--anima-color)
+    );
   }
 }
 
