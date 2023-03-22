@@ -259,6 +259,24 @@ span {
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
   position: relative; /* Adicionado */
+  animation: shadow-animation 2s ease-in-out infinite;
+}
+
+.services-container .services-box-mais:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+
+@keyframes shadow-animation {
+  0% {
+    filter: drop-shadow(0px 0px 2px var(--main-color));
+  }
+  50% {
+    filter: drop-shadow(0px 0px 7px var(--main-color));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 2px var(--main-color));
+  }
 }
 
 .services-box i {
@@ -275,51 +293,6 @@ span {
 .services-box-mais p {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
-}
-
-.services-box dialog {
-  /* position: absolute; Removido */
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 4rem;
-  transform: translateY(100%);
-  transition: 0.5s ease;
-  position: absolute; /* Adicionado */
-  top: 0; /* Adicionado */
-  left: 0; /* Adicionado */
-  overflow: hidden;
-}
-
-.services-box dialog.ativa {
-  transform: translateY(0);
-}
-
-/* Novo código adicionado */
-.services-box dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.services-box dialog button {
-  margin-top: 2rem;
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
-  border: none;
-  background-color: var(--main-color);
-  color: var(--bg-color);
-  border-radius: 2rem;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.services-box dialog button:hover {
-  transform: scale(1.1);
 }
 
 .portfolio {
