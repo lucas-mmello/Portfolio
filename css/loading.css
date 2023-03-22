@@ -27,6 +27,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: sans-serif;
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 .progress-bar {
