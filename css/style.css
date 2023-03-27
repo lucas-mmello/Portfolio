@@ -350,11 +350,30 @@ span {
 
 .portfolio-layer h4 {
   font-size: 3rem;
+  font-weight: bold;
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px var(--main-color);
+    filter: drop-shadow(0 0 10px var(--main-color));
+  }
+  50% {
+    text-shadow: 0 0 20px var(--main-color);
+    filter: drop-shadow(0 0 10px var(--main-color));
+  }
+  100% {
+    text-shadow: 0 0 10px var(--main-color);
+    filter: drop-shadow(0 0 10px var(--main-color));
+  }
 }
 
 .portfolio-layer p {
   font-size: 1.6rem;
   margin: 0.3rem 0 1rem;
+  font-weight: bold;
+  animation: glow 2s infinite;
 }
 
 .portfolio-layer a {
@@ -365,6 +384,22 @@ span {
   height: 5rem;
   background: var(--text-color);
   border-radius: 50%;
+}
+.portfolio-layer a:hover {
+  transform: scale(1.1);
+  animation: glowA 2s infinite;
+}
+
+@keyframes glowA {
+  0% {
+    filter: drop-shadow(0 0 5px var(--second-bg-color));
+  }
+  50% {
+    filter: drop-shadow(0 0 10px var(--second-bg-color));
+  }
+  100% {
+    filter: drop-shadow(0 0 5px var(--second-bg-color));
+  }
 }
 
 .portfolio-layer a i {
