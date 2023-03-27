@@ -82,6 +82,7 @@ section {
 .navbar a.active {
   color: var(--main-color);
   text-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.85rem;
 }
 
 .navbar a.light {
@@ -537,6 +538,9 @@ span {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
+  }
+  .navbar a.active {
+    font-size: 2.15rem;
   }
   .home {
     flex-direction: column;
