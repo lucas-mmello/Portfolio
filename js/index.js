@@ -84,6 +84,8 @@ const themeToggle = document.getElementById("theme-toggle");
 const root = document.documentElement;
 const themeImage = document.getElementById("theme-image");
 const sobreImage = document.getElementById("sobre-image");
+const logoLink = document.querySelector(".logo");
+const logoImg = logoLink.querySelector("img");
 
 themeToggle.addEventListener("click", (e) => {
   e.preventDefault();
@@ -96,4 +98,7 @@ themeToggle.addEventListener("click", (e) => {
   sobreImage.src = root.classList.contains("light")
     ? "./images/My project-3.png"
     : "./images/My_project-2.png";
+  logoImg.src = root.classList.contains("light")
+    ? "./images/logo-light.png"
+    : "./images/logo-dark.png";
 });

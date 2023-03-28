@@ -70,6 +70,13 @@ section {
   cursor: default;
 }
 
+.logo img {
+  margin-top: 1rem;
+  width: 104px;
+  height: 26px;
+  cursor: default;
+}
+
 .navbar a {
   text-decoration: none;
   font-size: 1.7rem;
