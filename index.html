@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="7;url=./portfolio.html" />
+    <!-- <meta http-equiv="refresh" content="7;url=./portfolio.html" /> -->
     <title>Carregando</title>
     <link rel="stylesheet" href="./css/loading.css" />
     <link
@@ -47,11 +47,11 @@
       const p = document.querySelector("#p");
 
       const timer = setInterval(() => {
-        percent += 1;
+        percent += 6;
         progress.style.width = percent + "%";
-        if (percent >= 110) {
+        if (percent >= 168) {
           p.innerHTML = "Redirecionando";
-          if (percent >= 120) {
+          if (percent >= 180) {
             clearInterval(timer);
             window.location.href = "./portfolio.html";
           }
