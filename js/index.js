@@ -111,3 +111,18 @@ themeToggle.addEventListener("click", (e) => {
     ? "./images/logo-light.png"
     : "./images/logo-dark.png";
 });
+
+//links girando ao clicar
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach((link) => {
+  link.addEventListener("click", function (ev) {
+    var button = ev.target;
+    button.classList.add("rotate");
+
+    setTimeout(function () {
+      button.classList.remove("rotate");
+    }, 1400);
+  });
+});
