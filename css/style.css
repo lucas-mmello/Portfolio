@@ -19,6 +19,7 @@
   --anima-color: rgb(27, 225, 247);
   --anima-shadow: 1.5mm;
   --anima-shadow-w: 0.5mm;
+  --theme-color: #f90;
 }
 
 :root.light {
@@ -29,6 +30,7 @@
   --anima-color: rgb(255, 163, 24);
   --anima-shadow: 3mm;
   --anima-shadow-w: 1mm;
+  --theme-color: #0ef;
 }
 
 html {
@@ -99,15 +101,24 @@ section {
   font-size: 1.85rem;
 }
 
-.navbar a.light {
-  color: var(--main-color);
-  text-shadow: 0 0 1rem var(--main-color);
-}
-
 #menu-icon {
   font-size: 3.6rem;
   color: var(--text-color);
   display: none;
+}
+#theme-icon {
+  background: transparent;
+  border: 0.2rem solid var(--theme-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--theme-color);
+  transition: 0.5s ease;
+}
+
+#theme-icon:hover {
+  background: var(--theme-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--theme-color);
 }
 
 .home {

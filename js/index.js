@@ -86,12 +86,21 @@ const themeImage = document.getElementById("theme-image");
 const sobreImage = document.getElementById("sobre-image");
 const logoLink = document.querySelector(".logo");
 const logoImg = logoLink.querySelector("img");
+const iconTheme = document.querySelector("#theme-icon");
+
+//<i class='bx bx-moon' ></i>
+//bx bx-sun
 
 themeToggle.addEventListener("click", (e) => {
   e.preventDefault();
   root.classList.toggle("light");
-  themeToggle.classList.toggle("light");
-  themeToggle.classList.toggle("dark");
+  if (iconTheme.classList.contains("bx-moon")) {
+    iconTheme.classList.remove("bx-moon");
+    iconTheme.classList.add("bx-sun");
+  } else {
+    iconTheme.classList.remove("bx-sun");
+    iconTheme.classList.add("bx-moon");
+  }
   themeImage.src = root.classList.contains("light")
     ? "./images/My project-4.png"
     : "./images/My project-1.png";
