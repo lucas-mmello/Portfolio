@@ -1,0 +1,34 @@
+{
+  "projetos": [
+    {
+      "imagem": "./images/port.jpg",
+      "h4": "Em breve",
+      "p": "Projeto que futuramente será desenvolvido",
+      "href": "#"
+    },
+    {
+      "imagem": "./images/port.jpg",
+      "h4": "Em breve",
+      "p": "Projeto que futuramente será desenvolvido",
+      "href": "#"
+    },
+    {
+      "imagem": "./images/port.jpg",
+      "h4": "Jogo da Velha",
+      "p": "Projeto de um jogo da velha, escrito em javascript quando estava estudando um módulo de um curso.",
+      "href": "https://lucas-mmello.github.io/Jogo-da-Velha/"
+    },
+    {
+      "imagem": "./images/port.jpg",
+      "h4": "Calculadora",
+      "p": "Projeto de calculadora, escrito em javascript quando estava estudando um módulo de um curso.",
+      "href": "https://lucas-mmello.github.io/Calculadora/"
+    },
+    {
+      "imagem": "./images/port.jpg",
+      "h4": "Em breve",
+      "p": "Projeto que futuramente será desenvolvido",
+      "href": "#"
+    }
+  ]
+}

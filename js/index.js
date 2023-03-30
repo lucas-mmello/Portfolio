@@ -126,3 +126,77 @@ navLink.forEach((link) => {
     }, 1400);
   });
 });
+
+// pegando os dados do database.json
+
+const divPortfolioContainer = document.querySelector(".portfolio-container");
+const btnVerMais = document.querySelector("#ver-mais");
+let projetos = [];
+let indiceProximoProjeto = 0;
+
+async function carregarDados() {
+  try {
+    const response = await fetch("./database/database.json");
+    const dados = await response.json();
+    projetos = dados.projetos;
+    projetos.reverse();
+    console.log(projetos);
+    criarProjetos(projetos.slice(0, 3));
+    indiceProximoProjeto = 3; // inicia com 3 projetos já adicionados
+  } catch (erro) {
+    console.log(erro);
+  }
+}
+
+function criarProjetos(listaProjetos) {
+  listaProjetos.forEach((projeto) => {
+    const divProjeto = document.createElement("div");
+    divProjeto.classList.add("portfolio-box");
+
+    const imgProjeto = document.createElement("img");
+    imgProjeto.src = projeto.imagem;
+    imgProjeto.alt = "Imagem Portfolio";
+    divProjeto.appendChild(imgProjeto);
+
+    const divProjetoLayer = document.createElement("div");
+    divProjetoLayer.classList.add("portfolio-layer");
+
+    const h4Projeto = document.createElement("h4");
+    h4Projeto.textContent = projeto.h4;
+    divProjetoLayer.appendChild(h4Projeto);
+
+    const pProjeto = document.createElement("p");
+    pProjeto.textContent = projeto.p;
+    divProjetoLayer.appendChild(pProjeto);
+
+    const aProjeto = document.createElement("a");
+    aProjeto.href = projeto.href;
+    aProjeto.target = "_blank";
+
+    const iProjeto = document.createElement("i");
+    iProjeto.classList.add("bx", "bx-link-external");
+    aProjeto.appendChild(iProjeto);
+
+    divProjetoLayer.appendChild(aProjeto);
+    divProjeto.appendChild(divProjetoLayer);
+
+    divPortfolioContainer.appendChild(divProjeto);
+  });
+}
+
+btnVerMais.addEventListener("click", () => {
+  if (indiceProximoProjeto < projetos.length) {
+    const listaProjetos = projetos.slice(
+      indiceProximoProjeto,
+      indiceProximoProjeto + 3
+    );
+    criarProjetos(listaProjetos);
+    indiceProximoProjeto += 3;
+  }
+  if (indiceProximoProjeto >= projetos.length) {
+    btnVerMais.disabled = true;
+    btnVerMais.style.display = "none";
+  }
+});
+
+carregarDados();
