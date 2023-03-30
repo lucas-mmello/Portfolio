@@ -2,15 +2,9 @@
   "projetos": [
     {
       "imagem": "./images/port.jpg",
-      "h4": "Em breve",
-      "p": "Projeto que futuramente será desenvolvido",
-      "href": "#"
-    },
-    {
-      "imagem": "./images/port.jpg",
-      "h4": "Em breve",
-      "p": "Projeto que futuramente será desenvolvido",
-      "href": "#"
+      "h4": "Calculadora",
+      "p": "Projeto de calculadora, escrito em javascript quando estava estudando um módulo de um curso.",
+      "href": "https://lucas-mmello.github.io/Calculadora/"
     },
     {
       "imagem": "./images/port.jpg",
@@ -20,9 +14,9 @@
     },
     {
       "imagem": "./images/port.jpg",
-      "h4": "Calculadora",
-      "p": "Projeto de calculadora, escrito em javascript quando estava estudando um módulo de um curso.",
-      "href": "https://lucas-mmello.github.io/Calculadora/"
+      "h4": "Music Player",
+      "p": "Projeto de um music player, escrito em javascript quando estudava a partir de um video do youtube",
+      "href": "https://lucas-mmello.github.io/MusicPlayer/"
     },
     {
       "imagem": "./images/port.jpg",
