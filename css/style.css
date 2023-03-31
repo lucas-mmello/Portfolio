@@ -348,9 +348,14 @@ span {
   margin-bottom: 4rem;
 }
 
-#ver-mais {
+#ver-mais,
+#ver-menos {
   display: flex;
   margin: 2rem auto 2rem auto;
+}
+
+#ver-menos {
+  display: none;
 }
 
 .portfolio-container {

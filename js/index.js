@@ -133,6 +133,7 @@ const divPortfolioContainer = document.querySelector(".portfolio-container");
 const btnVerMais = document.querySelector("#ver-mais");
 let projetos = [];
 let indiceProximoProjeto = 0;
+let projad = 0; // contador para saber quantos projetos tem na tela
 
 async function carregarDados() {
   try {
@@ -142,7 +143,7 @@ async function carregarDados() {
     projetos.reverse();
     console.log(projetos);
     criarProjetos(projetos.slice(0, 3));
-    indiceProximoProjeto = 3; // inicia com 3 projetos já adicionados
+    console.log(projetos);
   } catch (erro) {
     console.log(erro);
   }
@@ -181,6 +182,9 @@ function criarProjetos(listaProjetos) {
     divProjeto.appendChild(divProjetoLayer);
 
     divPortfolioContainer.appendChild(divProjeto);
+    indiceProximoProjeto++;
+    projad++;
+    console.log(projad);
   });
 }
 
@@ -191,12 +195,43 @@ btnVerMais.addEventListener("click", () => {
       indiceProximoProjeto + 3
     );
     criarProjetos(listaProjetos);
-    indiceProximoProjeto += 3;
   }
   if (indiceProximoProjeto >= projetos.length) {
     btnVerMais.disabled = true;
     btnVerMais.style.display = "none";
   }
+  btnVerMenos.style.display = "flex";
 });
 
+//botão ver menos
+
+const btnVerMenos = document.querySelector("#ver-menos");
+btnVerMenos.addEventListener("click", () => {
+  let qtdeProjetosRemover;
+  switch (projad) {
+    case 3:
+      qtdeProjetosRemover = 0;
+      break;
+    case 4:
+      qtdeProjetosRemover = 1;
+      break;
+    case 5:
+      qtdeProjetosRemover = 2;
+      break;
+    default:
+      qtdeProjetosRemover = 3;
+  }
+  for (let i = 0; i < qtdeProjetosRemover; i++) {
+    divPortfolioContainer.removeChild(divPortfolioContainer.lastElementChild);
+    indiceProximoProjeto--;
+    projad--;
+  }
+
+  if (projad === 3) {
+    btnVerMenos.style.display = "none";
+  }
+
+  btnVerMais.disabled = false;
+  btnVerMais.style.display = "flex";
+});
 carregarDados();
