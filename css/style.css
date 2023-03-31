@@ -382,6 +382,10 @@ span {
   transform: scale(1.1);
 }
 
+span.ativo {
+  display: none;
+}
+
 .portfolio-box .portfolio-layer {
   position: absolute;
   bottom: 0;
@@ -636,11 +640,33 @@ span {
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  span.ativo {
+    position: absolute;
+    font-size: 1.7rem;
+    color: var(--anima-color);
+    animation: glow 2s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(0);
+    margin: auto;
+    top: -70%;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+  }
+  .portfolio-box img:hover + span.ativo {
+    display: none;
+  }
 }
 
 @media (max-width: 617px) {
   .portfolio-container {
     grid-template-columns: 1fr;
+  }
+  span.ativo {
+    font-size: 2rem;
   }
 }
 
@@ -659,6 +685,9 @@ span {
   }
   .about-img img {
     width: 90vw;
+  }
+  span.ativo {
+    font-size: 1.59rem;
   }
   .footer {
     flex-direction: column-reverse;

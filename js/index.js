@@ -158,6 +158,10 @@ function criarProjetos(listaProjetos) {
     imgProjeto.src = projeto.imagem;
     imgProjeto.alt = "Imagem Portfolio";
     divProjeto.appendChild(imgProjeto);
+    const span = document.createElement("span");
+    span.classList += "ativo";
+    span.textContent = "Clique para saber mais!";
+    divProjeto.appendChild(span);
 
     const divProjetoLayer = document.createElement("div");
     divProjetoLayer.classList.add("portfolio-layer");
