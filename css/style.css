@@ -82,11 +82,15 @@ section {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
+.logo {
+  cursor: default;
+}
+
 .logo img {
   margin-top: 1rem;
   width: 104px;
   height: 26px;
-  cursor: default;
+  cursor: pointer;
 }
 
 .navbar a {
@@ -242,6 +246,29 @@ span {
 
 .about-img img {
   width: 35vw;
+  animation: sideFloatImage 4s ease-in-out infinite;
+}
+
+@keyframes sideFloatImage {
+  0% {
+    transform: translateX(0);
+    filter: drop-shadow(
+      0 var(--anima-shadow) var(--anima-shadow-w) var(--anima-color)
+    );
+  }
+  50% {
+    transform: translateX(-2.4rem);
+    filter: drop-shadow(
+      0 calc(var(--anima-shadow) * 2) calc(var(--anima-shadow-w) * 3)
+        var(--anima-color)
+    );
+  }
+  100% {
+    transform: translateX(0);
+    filter: drop-shadow(
+      0 var(--anima-shadow) var(--anima-shadow-w) var(--anima-color)
+    );
+  }
 }
 
 .heading {
