@@ -93,6 +93,11 @@ section {
   cursor: pointer;
   animation: logo-animation 4s ease-in-out infinite;
   animation-play-state: running;
+  transition: 2s;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
 }
 
 @keyframes logo-animation {
