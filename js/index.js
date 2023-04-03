@@ -239,3 +239,20 @@ btnVerMenos.addEventListener("click", () => {
   btnVerMais.style.display = "flex";
 });
 carregarDados();
+
+// animação da logo
+
+const logo = document.querySelector(".logo img");
+const animationDuration = 4000; // 4 segundos (corresponde à duração da animação definida em CSS)
+const delay = 4000; // 2 segundos de atraso entre as iterações
+
+logo.addEventListener("animationiteration", () => {
+  // Pausa a animação
+  logo.style.animationPlayState = "paused";
+
+  // Aguarda o tempo de atraso
+  setTimeout(() => {
+    // Reinicia a animação após o atraso
+    logo.style.animationPlayState = "running";
+  }, delay);
+});
