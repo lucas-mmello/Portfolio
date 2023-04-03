@@ -408,7 +408,7 @@ span {
   transition: 0.5s ease;
 }
 
-.portfolio-box img:hover {
+.portfolio-box:hover > img {
   transform: scale(1.1);
 }
 
@@ -686,7 +686,7 @@ span.ativo {
     left: 25%;
     right: 25%;
   }
-  .portfolio-box img:hover + span.ativo {
+  .portfolio-box:hover > img + span.ativo {
     display: none;
   }
 }
