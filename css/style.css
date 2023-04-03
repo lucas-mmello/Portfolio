@@ -36,6 +36,8 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scrollbar-width: 1rem;
+  scrollbar-color: var(--main-color) var(--bg-color);
 }
 
 body {
