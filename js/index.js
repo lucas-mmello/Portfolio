@@ -256,3 +256,34 @@ logo.addEventListener("animationiteration", () => {
     logo.style.animationPlayState = "running";
   }, delay);
 });
+
+// animação portfolio box
+
+let portfolioPrimeiraVez = 0;
+const projetosLink = document.querySelector(".projeto");
+
+// Função para verificar se o elemento foi adicionado à DOM
+function verificarElementoAdicionado() {
+  const portfolioBoxes = document.querySelectorAll(".portfolio-box");
+  if (
+    projetosLink.classList.contains("active") &&
+    portfolioPrimeiraVez === 0 &&
+    portfolioBoxes.length > 0
+  ) {
+    portfolioBoxes.forEach((box) => {
+      box.classList.add(
+        "animate__animated",
+        "animate__pulse",
+        "animate__delay-3s"
+      );
+      console.log(portfolioBoxes);
+    });
+    portfolioPrimeiraVez = 1;
+  } else {
+    // Aguarda 500ms e verifica novamente
+    setTimeout(verificarElementoAdicionado, 500);
+  }
+}
+
+// Inicializa a verificação
+verificarElementoAdicionado();
