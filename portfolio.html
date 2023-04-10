@@ -11,12 +11,16 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Meu Portfólio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo"><img src="./images/logo-dark.png" alt="Logo"></a>
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar">
+      <a href="#" class="logo animate__animated animate__fadeInDown"><img src="./images/logo-dark.png" alt="Logo"></a>
+      <i class="bx bx-menu animate__animated animate__fadeInUp animate__delay-1s" id="menu-icon"></i>
+      <nav class="navbar animate__animated animate__pulse animate__delay-3s">
         <a href="#inicio" class="active nav-link">Inicio</a>
         <a href="#sobre" class="nav-link">Sobre</a>
         <a href="#servicos" class="nav-link">Serviços</a>
@@ -141,7 +145,7 @@
     <section class="portfolio" id="projetos">
       <h2 class="heading">Últimos <span>Projetos</span></h2>
 
-      <div class="portfolio-container">
+      <div class="portfolio-container" data-aos="fade-down">
         
       </div> 
       <button class="btn" id="ver-mais">Ver mais</button>
