@@ -273,7 +273,7 @@ function verificarElementoAdicionado() {
     portfolioBoxes.forEach((box) => {
       box.classList.add(
         "animate__animated",
-        "animate__flash",
+        "animate__headShake",
         "animate__delay-3s"
       );
       console.log(portfolioBoxes);
