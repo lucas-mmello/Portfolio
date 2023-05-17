@@ -4,13 +4,13 @@
   const root = document.documentElement;
   const content = document.getElementById("body");
   // Obtém a URL atual
-  const currentPage = window.location.pathname;
+  const currentPage = window.location.href;
 
   if (theme === "light") {
     root.classList.add("light");
 
     // Verifica se está na página desejada
-    if (currentPage === "/portfolio.html") {
+    if (currentPage.includes("/portfolio.html")) {
       const themeImage = document.getElementById("theme-image");
       const sobreImage = document.getElementById("sobre-image");
       const logoLink = document.querySelector(".logo");
