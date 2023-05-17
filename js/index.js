@@ -94,6 +94,11 @@ const iconTheme = document.querySelector("#theme-icon");
 themeToggle.addEventListener("click", (e) => {
   e.preventDefault();
   root.classList.toggle("light");
+  if (root.classList.contains("light")) {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
   if (iconTheme.classList.contains("bx-moon")) {
     iconTheme.classList.remove("bx-moon");
     iconTheme.classList.add("bx-sun");

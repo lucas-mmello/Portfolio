@@ -18,6 +18,17 @@
   --main-color: #0ef;
 }
 
+:root.light {
+  --bg-color: #f5f5f5;
+  --second-bg-color: #e0e0e0;
+  --text-color: #333;
+  --main-color: #f90;
+}
+
+.hidden {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
 }

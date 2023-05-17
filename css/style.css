@@ -33,6 +33,10 @@
   --theme-color: #0ef;
 }
 
+.hidden {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
