@@ -20,6 +20,12 @@
     },
     {
       "imagem": "./images/port.jpg",
+      "h4": "InkSearch",
+      "p": "Projeto React de bucas de estudios de tatuagem",
+      "href": "https://ink-search.netlify.app/"
+    },
+    {
+      "imagem": "./images/port.jpg",
       "h4": "Em breve",
       "p": "Projeto que futuramente será desenvolvido",
       "href": "#"
