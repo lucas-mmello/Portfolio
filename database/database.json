@@ -26,6 +26,12 @@
     },
     {
       "imagem": "./images/port.jpg",
+      "h4": "InkSearch - TCC",
+      "p": "TCC do projeto React de bucas de estudios de tatuagem",
+      "href": "https://www.linkedin.com/posts/lucas-matos-de-mello-474a29196_tcc-inovaaexaeto-tecnologia-activity-7274057643344744448-Ps39?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4R-VgB4Z641T32mkpS0d39fyHDgAYqwA4"
+    },
+    {
+      "imagem": "./images/port.jpg",
       "h4": "Em breve",
       "p": "Projeto que futuramente será desenvolvido",
       "href": "#"
