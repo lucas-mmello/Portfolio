@@ -4,37 +4,61 @@
       "imagem": "./images/port.jpg",
       "h4": "Calculadora",
       "p": "Projeto de calculadora, escrito em javascript quando estava estudando um módulo de um curso.",
-      "href": "https://lucas-mmello.github.io/Calculadora/"
+      "href": "https://lucas-mmello.github.io/Calculadora/",
+      "nda": false,
+      "modalHtml": "",
+      "stack": "front",
+      "technologies": ["JavaScript", "HTML", "CSS"]
     },
     {
       "imagem": "./images/port.jpg",
       "h4": "Jogo da Velha",
       "p": "Projeto de um jogo da velha, escrito em javascript quando estava estudando um módulo de um curso.",
-      "href": "https://lucas-mmello.github.io/Jogo-da-Velha/"
+      "href": "https://lucas-mmello.github.io/Jogo-da-Velha/",
+      "nda": false,
+      "modalHtml": "",
+      "stack": "front",
+      "technologies": ["JavaScript", "HTML", "CSS"]
     },
     {
       "imagem": "./images/port.jpg",
       "h4": "Music Player",
       "p": "Projeto de um music player, escrito em javascript quando estudava a partir de um video do youtube",
-      "href": "https://lucas-mmello.github.io/MusicPlayer/"
+      "href": "https://lucas-mmello.github.io/MusicPlayer/",
+      "nda": false,
+      "modalHtml": "",
+      "stack": "front",
+      "technologies": ["JavaScript", "HTML", "CSS"]
     },
     {
       "imagem": "./images/port.jpg",
       "h4": "InkSearch",
       "p": "Projeto React de bucas de estudios de tatuagem",
-      "href": "https://ink-search.netlify.app/"
+      "href": "https://ink-search.netlify.app/",
+      "nda": false,
+      "modalHtml": "",
+      "stack": "front",
+      "technologies": ["React", "JavaScript", "CSS"]
     },
     {
       "imagem": "./images/port.jpg",
       "h4": "InkSearch - TCC",
       "p": "TCC do projeto React de bucas de estudios de tatuagem",
-      "href": "https://www.linkedin.com/posts/lucas-matos-de-mello-474a29196_tcc-inovaaexaeto-tecnologia-activity-7274057643344744448-Ps39?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4R-VgB4Z641T32mkpS0d39fyHDgAYqwA4"
+      "href": "https://www.linkedin.com/posts/lucas-matos-de-mello-474a29196_tcc-inovaaexaeto-tecnologia-activity-7274057643344744448-Ps39?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4R-V[...],",
+      "nda": false,
+      "modalHtml": "",
+      "stack": "full",
+      "technologies": ["React", "Node.js", "CSS"]
     },
     {
       "imagem": "./images/port.jpg",
       "h4": "Em breve",
       "p": "Projeto que futuramente será desenvolvido",
-      "href": "#"
+      "href": "#",
+      "nda": false,
+      "modalHtml": "",
+      "stack": "front",
+      "technologies": []
     }
   ]
 }
